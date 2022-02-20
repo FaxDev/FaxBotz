@@ -486,15 +486,7 @@ vcard2 = 'BEGIN:VCARD\n'
 Ryuu.sendMessage(from, {displayName: `Ownernya ${botname}`, vcard: vcard2}, contact, 
 { quoted: mek, 
 })
-buttonss = [{buttonId: `${prefix}script`, buttonText: {displayText: 'SCRIPT BOT'}, type: 1},{buttonId: `${prefix}yt`, buttonText: {displayText: 'YOUTUBE'}, type: 1}]
-const buMess = {
-contentText: "Tu Owner ku Mau Di Apain Yah",
-footerText: 'About Owner',
-buttons: buttonss,
-headerType: 1
-}
-await Ryuu.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: mek})
-break
+reply(`nih Owner ku`)
 case 'mode':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner) 
 buttonss = [{buttonId: `${prefix}public`, buttonText: {displayText: 'PUBLIC 🌱'}, type: 1},{buttonId: `${prefix}self`, buttonText: {displayText: 'SELF 🍂'}, type: 1}]
